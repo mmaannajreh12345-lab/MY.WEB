@@ -1,0 +1,16 @@
+/* ============================================================
+   gifts.css — صفحة الهدايا
+   ============================================================ */
+
+.gift-ribbon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  z-index: 1;
+}

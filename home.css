@@ -1,0 +1,72 @@
+/* ============================================================
+   home.css — صفحة الرئيسية
+   ============================================================ */
+
+.hero {
+  min-height: calc(100vh - 106px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px 60px;
+  background: linear-gradient(145deg, #1c0e02 0%, #3a1c06 50%, #c8860a 100%);
+}
+
+body:has(.hero) {
+  background: #3a1c06;
+}
+
+body.dark-mode:has(.hero) {
+  background: #1c0e02;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(145deg, #0a0400 0%, #1c0e02 55%, #6b3d00 100%);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 620px;
+}
+
+.hero-title {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: #f5c842;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 16px rgba(0,0,0,0.4);
+  line-height: 1.3;
+}
+
+.hero-sub {
+  font-size: 1.08rem;
+  color: #d4b87a;
+  margin-bottom: 36px;
+  line-height: 1.9;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #f5c842;
+  color: #1a0a00;
+  text-decoration: none;
+  padding: 14px 46px;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-family: 'Cairo', sans-serif;
+  box-shadow: 0 4px 20px rgba(245,200,66,0.45);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(245,200,66,0.55);
+}
+
+@media (max-width: 650px) {
+  .hero-title { font-size: 1.9rem; }
+  .hero-sub   { font-size: 0.95rem; }
+  .hero       { padding: 40px 20px; }
+}

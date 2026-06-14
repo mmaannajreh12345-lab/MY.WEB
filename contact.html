@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موسيقاتي — تواصل معنا</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../صفحات CSS/shared.css"/>
+  <link rel="stylesheet" href="../صفحات CSS/contact.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <a class="top-logo" href="../صفحات/index.html">MOSIQATI</a>
+    <button class="top-back" onclick="history.back()">
+      <span class="top-back-arrow">←</span>
+      <span data-ar="رجوع" data-en="Back">رجوع</span>
+    </button>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="nav-item" href="../صفحات/index.html"><span class="nav-icon">🏠</span><span class="nav-label" data-ar="الرئيسية" data-en="Home">الرئيسية</span></a>
+      <a class="nav-item" href="../صفحات/store.html"><span class="nav-icon">🛒</span><span class="nav-label" data-ar="المتجر" data-en="Store">المتجر</span></a>
+      <a class="nav-item" href="../صفحات/discounts.html"><span class="nav-icon">🏷️</span><span class="nav-label" data-ar="الخصومات" data-en="Discounts">الخصومات</span></a>
+      <a class="nav-item" href="../صفحات/gifts.html"><span class="nav-icon">🎁</span><span class="nav-label" data-ar="الهدايا" data-en="Gifts">الهدايا</span></a>
+      <a class="nav-item" href="../صفحات/contact.html"><span class="nav-icon">💬</span><span class="nav-label" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span></a>
+    </div>
+  </nav>
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h1>
+      <p data-ar="يمكنكم التواصل معنا عبر:" data-en="You can reach us via:">يمكنكم التواصل معنا عبر:</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" fill="#25D366">
+              <path d="M16 2C8.268 2 2 8.268 2 16c0 2.49.658 4.83 1.806 6.855L2 30l7.347-1.788A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.826-1.593l-.418-.248-4.36 1.061 1.092-4.245-.272-.435A11.46 11.46 0 0 1 4.5 16C4.5 9.596 9.596 4.5 16 4.5S27.5 9.596 27.5 16 22.404 27.5 16 27.5zm6.29-8.617c-.344-.172-2.036-1.004-2.352-1.118-.316-.115-.546-.172-.776.172-.23.344-.89 1.118-1.09 1.348-.2.23-.4.258-.744.086-.344-.172-1.452-.535-2.766-1.707-1.022-.912-1.712-2.038-1.912-2.382-.2-.344-.022-.53.15-.701.155-.155.344-.402.516-.603.172-.2.23-.344.344-.573.115-.23.057-.43-.028-.603-.086-.172-.776-1.87-1.063-2.562-.28-.673-.564-.582-.776-.593l-.66-.011c-.23 0-.603.086-.918.43s-1.205 1.177-1.205 2.87 1.233 3.33 1.405 3.56c.172.23 2.428 3.71 5.883 5.205.822.355 1.464.567 1.963.726.825.263 1.576.226 2.17.137.662-.099 2.036-.832 2.323-1.636.287-.804.287-1.494.2-1.636-.085-.143-.315-.229-.659-.401z"/>
+            </svg>
+          </span>
+          <span data-ar="واتساب: 96277620177+" data-en="WhatsApp: +96277620177">واتساب: 96277620177+</span>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label data-ar="الاسم:" data-en="Name:">الاسم:</label>
+          <input type="text" id="contact-name" data-placeholder-ar="أدخل اسمك" data-placeholder-en="Enter your name" placeholder="أدخل اسمك" required/>
+        </div>
+        <div class="form-group">
+          <label data-ar="البريد الإلكتروني:" data-en="Email Address:">البريد الإلكتروني:</label>
+          <input type="email" id="contact-email" data-placeholder-ar="example@email.com" data-placeholder-en="example@email.com" placeholder="example@email.com" required/>
+        </div>
+        <div class="form-group">
+          <label data-ar="رسالتك:" data-en="Your Message:">رسالتك:</label>
+          <textarea id="contact-msg" rows="4" data-placeholder-ar="اكتب رسالتك هنا..." data-placeholder-en="Write your message here..." placeholder="اكتب رسالتك هنا..." required></textarea>
+        </div>
+        <button type="submit" class="send-btn" data-ar="إرسال" data-en="Send">إرسال</button>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="../ملفات JS/shared.js"></script>
+  <script src="../ملفات JS/contact.js"></script>
+</body>
+</html>

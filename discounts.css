@@ -1,0 +1,21 @@
+/* ============================================================
+   discounts.css — صفحة الخصومات
+   ============================================================ */
+
+.discount-badge {
+  display: inline-block;
+  background: #d32f2f;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.product-card-old-price {
+  color: #aaa;
+  text-decoration: line-through;
+  font-size: 0.87rem;
+  margin-left: 6px;
+}

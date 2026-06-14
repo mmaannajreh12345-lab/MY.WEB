@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موسيقاتي — الإعدادات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../صفحات CSS/shared.css"/>
+  <link rel="stylesheet" href="../صفحات CSS/settings.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <a class="top-logo" href="../صفحات/index.html">MOSIQATI</a>
+    <button class="top-back" onclick="history.back()">
+      <span class="top-back-arrow">←</span>
+      <span data-ar="رجوع" data-en="Back">رجوع</span>
+    </button>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="nav-item" href="../صفحات/index.html"><span class="nav-icon">🏠</span><span class="nav-label" data-ar="الرئيسية" data-en="Home">الرئيسية</span></a>
+      <a class="nav-item" href="../صفحات/store.html"><span class="nav-icon">🛒</span><span class="nav-label" data-ar="المتجر" data-en="Store">المتجر</span></a>
+      <a class="nav-item" href="../صفحات/discounts.html"><span class="nav-icon">🏷️</span><span class="nav-label" data-ar="الخصومات" data-en="Discounts">الخصومات</span></a>
+      <a class="nav-item" href="../صفحات/gifts.html"><span class="nav-icon">🎁</span><span class="nav-label" data-ar="الهدايا" data-en="Gifts">الهدايا</span></a>
+      <a class="nav-item" href="../صفحات/contact.html"><span class="nav-icon">💬</span><span class="nav-label" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span></a>
+    </div>
+  </nav>
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1 data-ar="الإعدادات" data-en="Settings">الإعدادات</h1>
+    </div>
+    <div class="settings-wrap">
+      <div class="setting-card">
+        <div class="setting-label">
+          <span class="setting-icon">🌙</span>
+          <span data-ar="الوضع الداكن" data-en="Dark Mode">الوضع الداكن</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="dark-toggle" onchange="toggleDark(this)"/>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="setting-card">
+        <div class="setting-label">
+          <span class="setting-icon">🌐</span>
+          <span data-ar="اللغة" data-en="Language">اللغة</span>
+        </div>
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">العربية</button>
+          <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="../ملفات JS/shared.js"></script>
+</body>
+</html>
